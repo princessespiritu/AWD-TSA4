@@ -1,0 +1,129 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .navbar-brand {
+    order: 0;
+}
+
+.navbar .navbar-nav {
+    order: 1;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: black;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    text-decoration: underline;
+}
+
+.navbar .nav-item {
+    order: 2;
+}
+
+.navbar-nav .nav-item button {
+    background-color: white;
+    color: rgb(54, 137, 245);
+    padding: 10px 20px;
+    border: 1px solid rgb(54, 137, 245);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.text-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.text-center p {
+    font-weight: 300;
+}
+
+.card {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.card-header {
+    width: 100%;
+}
+
+.price {
+    font-size: 2.5em; 
+}
+
+.per-month {
+    font-size: 1.2em; 
+    font-weight: 400; 
+    color: #6c757d;
+    font-size: 2em; 
+}
+
+.card-text {
+    font-size: 0.8em;
+    color: black;
+}
+
+a.btn-custom {
+    color:  rgb(54, 137, 245);
+    background-color: white;
+    border-color:  rgb(54, 137, 245);
+    font-size: 1em;
+    padding: 5px 50px;
+}
+
+a.btn-custom-white {
+    color:  white ;
+    background-color: rgb(54, 137, 245) ;
+    border-color:  rgb(54, 137, 245) ;
+    font-size: 1em;
+    padding: 5px 70px;
+}
+
+.footer ul li a {
+    color: gray; 
+    font-size: 1em;
+}
+
+.footer h2 {
+    display: inline-block;
+    padding: 3px 10px;
+    background-color: rgb(90, 44, 134); 
+    color: white !important;
+    border-radius: 5px;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar .navbar-brand,
+    .navbar .navbar-nav,
+    .navbar .nav-item {
+        order: 0;
+    }
+
+    .navbar .navbar-nav {
+        flex-direction: row;
+    }
+}
